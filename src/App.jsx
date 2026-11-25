@@ -13,10 +13,10 @@ function App() {
     <>
       <Header/>
       <Routes>
-        <Route path= "/" element={<HomePage/>}/>
-        <Route path= "/about" element={<AboutPage/>}/>
-        <Route path= "/curriculumvitae" element={<CurriculumVitaePage/>}/>
-        <Route path= "/portfolio" element={<PortfolioPage/>}/>
+        <Route path="/Labb3_DynamiskSida_EsbjornHoNo/" element={<HomePage/>}/>
+        <Route path= "/Labb3_DynamiskSida_EsbjornHoNo/about" element={<AboutPage/>}/>
+        <Route path= "/Labb3_DynamiskSida_EsbjornHoNo/curriculumvitae" element={<CurriculumVitaePage/>}/>
+        <Route path= "/Labb3_DynamiskSida_EsbjornHoNo/portfolio" element={<PortfolioPage/>}/>
       </Routes>
       <EasterEggTager />
     </>

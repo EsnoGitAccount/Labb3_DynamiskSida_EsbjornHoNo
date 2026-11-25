@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import PortfolioCard from "./portfolioCard"
+import gitHubLogo from "../assets/GitHub_Invertocat_Black_Clearspace.png"
 
 export default function Portfolio(){
     const [repos, setRepos] = useState([])
@@ -50,7 +51,7 @@ export default function Portfolio(){
                             ): (
                                 <>
                                     {repos.map ((repo) => 
-                                        <PortfolioCard key={repo.id} title={repo.name} imageLink="src\assets\GitHub_Invertocat_Black_Clearspace.png" websiteLink={repo.html_url} description=""/>
+                                        <PortfolioCard key={repo.id} title={repo.name} imageLink={gitHubLogo} websiteLink={repo.html_url} description=""/>
                                     )}
                                 </>
                             )}

@@ -7,16 +7,16 @@ export default function Header(){
             <header>
                 <ul className="Header-Container">
                     <li>
-                        <NavLink to="/">Start</NavLink>
+                        <NavLink to="/Labb3_DynamiskSida_EsbjornHoNo/" end>Start</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/About">Om Mig</NavLink>
+                        <NavLink to="/Labb3_DynamiskSida_EsbjornHoNo/About">Om Mig</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio">Portfolio</NavLink>
+                        <NavLink to="/Labb3_DynamiskSida_EsbjornHoNo/Portfolio">Portfolio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Curriculumvitae">CV</NavLink>
+                        <NavLink to="/Labb3_DynamiskSida_EsbjornHoNo/Curriculumvitae">CV</NavLink>
                     </li>
                 </ul>
             </header>
