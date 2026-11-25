@@ -1,0 +1,77 @@
+{
+    "name": "John Doe",
+    "telephoneNumber": "+076 987 65 43",
+    "email": "examplemail@mail.se",
+    "jobs": [
+        {
+            "id": "job1",
+            "jobTitle": "Server",
+            "employer": "Kock In",
+            "startDate": "2023",
+            "endDate": "2024",
+            "description": "Bemanningsföretag. Åkte ut på diverse jobbuppdrag i Stockholm och ibland i resten av Sverige. Jobbade både bankett och a la carte."
+        },
+        {
+            "id": "job2",
+            "jobTitle": "Serveringsansvarig Bartender",
+            "employer": "Rindi Stundentkår",
+            "startDate": "2018",
+            "endDate": "2019",
+            "description": "Voluntärarbetade på studentkåren när jag pluggade. Ansvarade för ett av barlagen."
+        },
+        {
+            "id": "job3",
+            "jobTitle": "Cafébiträde",
+            "employer": "Wallins Bageri & Konditori",
+            "startDate": "2017",
+            "endDate": "2018",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."
+        }
+    ],
+    "educations":[
+        {
+            "id": "education1",
+            "school": "Chas Academy",
+            "program": "Fullstack .NET",
+            "startDate": "2025",
+            "endDate": "2027"
+        },
+        {
+            "id": "education2",
+            "school": "Uppsala Universitet Campus Visby",
+            "program": "Speldesign och Grafik",
+            "startDate": "2017",
+            "endDate": "2020"
+        },
+        {
+            "id": "education3",
+            "school": "Fryshusets Gymnasium",
+            "program": "Natur",
+            "startDate": "2008",
+            "endDate": "2011"
+        }
+    ],
+    "languages":[
+        {
+            "id": "language1",
+            "language": "Svenska",
+            "proficiency": "Modersmål"
+        },
+        {
+            "id": "language2",
+            "language": "Engelska",
+            "proficiency": "Flyttande"
+        },
+        {
+            "id": "language3",
+            "language": "Koreanska",
+            "proficiency": "Inget"
+        }
+    ],
+    "courses": [
+        {
+            "id": "courses1",
+            "course": "Ansvarsful Alkoholservering"
+        }
+    ]
+}

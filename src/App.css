@@ -1,0 +1,306 @@
+:root{
+    --bg-color: rgb(169, 207, 205);
+    --text-bg-color: rgb(215, 255, 253);
+}
+
+.pixelify-sans-import {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    background-color: var(--bg-color);
+}
+
+/* -- Header --*/
+.Header-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    list-style: none;
+    max-width: 100vw;
+}
+.Page-Header{
+    text-align: center;
+}
+.active{
+    background-color: aquamarine;
+}
+
+/* -- Start --*/
+.Start-Container{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--text-bg-color);
+}
+
+/* -- Om Mig --*/
+.OmMig-Container{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--text-bg-color);
+    gap: 1.25rem;
+}
+
+.OmMig-Container img{
+    height: auto;
+    width: 40%;
+}
+
+.OmMig-Text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* -- Portfolio --*/
+.Portfolio-Container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 50px;
+}
+
+.Portfolio-Card-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 2rem;
+}
+
+.Portfolio-Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 250px;
+    background-color: var(--text-bg-color);
+    border: none;
+    border-radius: .6rem;
+}
+
+.Portfolio-Card img{
+    height: auto;
+    width: 100%;
+    border-radius: .6rem .6rem 0 0;
+}
+
+.Portfolio-Card h4{
+    margin: .5rem 0 0.5rem 0;
+}
+
+/* --  Portfolio Modal --*/
+/* The overlay (background) */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Show the modal */
+.modal-overlay.show {
+    display: block;
+}
+
+/* The modal box */
+.modal-box {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--text-bg-color);
+}
+
+.modal-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+.modal-link > p, h3{
+    padding: .8rem;
+}
+
+.modal-image{
+    width: 100%;
+    height: auto;
+}
+
+/* Close button */
+.modalClose {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgb(182, 182, 182);
+    border-radius: 0 0 10px 10px;
+}
+.modalClose:hover{
+    background-color: grey;
+}
+
+/* -- CV --*/
+.CV-Container{
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: repeat(12, [col-start] 1fr);
+    text-align: center;
+    max-width: 1000px;
+    height: auto;
+    justify-content: center;
+    border: 1px solid black;
+    gap: 20px 0px;
+}
+.CV-Container div{
+    
+}
+.CV-Container #Contact-Info{
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 0;
+    grid-row-end: 2;
+}
+.CV-Container #Contact-Info #Contact1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.CV-Container #Contact-Info #Contact2{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+.CV-Container #Contact-Info #Contact3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+
+.Contact-Icon{
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+
+.CV-Container #Work-Experience{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.CV-Container #Education{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.CV-Container #Languages{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.CV-Container #Other-Skills{
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#easterEggBuster>div>div>h3{
+    font-family: "Pixelify Sans", sans-serif;
+}
+.easterEggBox{
+    display: flex;
+    flex-direction: row;
+}
+.easterEggBox>button{
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+#easterEggBlue:hover{
+    background-color: rgb(169, 207, 205);
+    color: black;
+}
+#easterEggRed:hover{
+    background-color: rgb(207, 169, 169);
+    color: black;
+}
+
+@media (max-width:840px){
+    .Portfolio-Card-Container{
+        flex-direction: column;
+    }
+    .OmMig-Container{
+        flex-direction: column;
+    }
+    .OmMig-Container img{
+        width: 15rem;
+    }
+}
+
+@media print {
+    header, .header, #header, .easterEggBox, .Page-Header {
+        display: none !important;
+    }
+    html, body {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #000;
+    }
+    .CV-Container{
+        width: auto;
+        max-width: fit-content;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        border: none;
+        
+    }
+}
